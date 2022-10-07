@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 2.4rem;
+}
+
+img {
+  width: 100%;
+  max-width: 25vw;
+  object-fit: cover;
+  
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+img:first-of-type {
+  position: relative;
+}
+
+.logo {
+  width: 25vw;
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 200px;
+  color: white;
+  background-color: rgb(0, 0, 0, 70%);
+}
+
+.logo > svg {
+  margin-right: 1.4rem;
+}
+
+.logo > p {
+  font-family: 'EB Garamond', serif;
+  font-size: 7rem;
+}
+
+
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  padding: 15rem 5rem 15rem 5rem;
+  
+}
+
+.container-1 > p:first-child {
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  width: 48ch;
+  letter-spacing: 1px;
+}
+
+.container-1 > p:nth-child(2) {
+  font-weight: 700;
+  margin-bottom: 7rem;
+}
+
+
+
+.row-1,
+.row-2,
+.row-3 {
+  display: flex;
+}
+
+.row-1,
+.row-2 {
+  margin-bottom: 2rem;
+}
+
+.row-1 {
+  margin-top: 2rem;
+}
+
+.left {
+  margin-right: 20rem;
+}
+
+.left > label,
+.right > label {
+  display: block;
+  margin-bottom: 20px
+}
+
+fieldset {
+  position: relative;
+  right: 1.7rem;
+  border: none;
+}
+
+button[type='submit'] {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  width: 30rem;
+  color: white;
+  background-color: #768c76;
+  border-radius: 8px;
+  border: none;
+  height: 5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #768c76;
+}
+
+input:not(button) {
+  border: 1px solid orange;
+  border-radius: 4px;
+  height: 4rem;
+  padding-left: 5px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #768c76;
+  box-shadow: 0 0 10px #768c76;
+}
+
+.error:invalid {
+  outline: none;
+  border-color: red;
+  box-shadow: 0 0 10px red;
+}
+
+svg {
+  fill: transparent;
+  stroke: white;
